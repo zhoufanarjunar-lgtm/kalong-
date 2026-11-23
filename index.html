@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jagat Saji - Website Katalog Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- PART 1. MEMBUAT SECTION NAVBAR -->
+  <nav>
+    <div class="wrapper">
+      <div class="logo">
+        <a href="#">JagatSaji</a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#banner">Beranda</a></li>
+          <li><a href="#services">Menu</a></li>
+          <li><a href="#customers">Rekanan</a></li>
+          <li><a href="#book-table" style="margin-right: 100px;">Hubungi Kami</a></li>
+          <li><img src="ser.png" style="width: 20px; height: auto; margin-right: 10px;"></li>
+          <li><img src="akun.png" style="width: 20px; height: auto; margin-right: 10px;"></li>
+          <li><img src="buy.png" style="width: 20px; height: auto; margin-right: 30px;"></li>
+          <li><a href="#book-table" class="order">Pesan Disini</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PART 2. MEMBUAT SECTION BANNER -->
+  <section class="banner" id="banner">
+    <div class="container">
+      <div class="kolom">
+        <p class="deskripsi">Sajian Masakan Indonesia</p>
+        <h2>Sajian Masakan Indonesia</h2>
+        <p>Nikmati kelezatan resep warisan leluhur yang diolah dari bumbu rempah pilihan. Dari Sabang sampai Merauke, kami menghadirkan kehangatan tradisi Indonesia langsung ke meja makan Anda. Jelajahi Rasa Kuliner Nusantara dengan kombinasi rempah, kesegaran bahan, dan kehangatan tradisi dalam setiap sajian. Pesan sekarang dan nikmati kelezatan masakan khas Indonesia!</p>
+        <a href="#book-table" class="reservasi">Pesan Sekarang</a>
+      </div>
+      <div class="gambar">
+        <img src="nusantara.png" alt="Banner JagatSaji" style="width: 100%; border-radius: 24px;">
+      </div>
+    </div>
+  </section>
+
+  <!-- PART 3. MEMBUAT SECTION SERVICES / PILIHAN MENU -->
+  <section class="services" id="services">
+    <div class="container-services">
+      <div class="section-title">
+        <h2>Pilihan Menu</h2>
+      </div>
+      
+      <div class="services-grid">
+        <!-- Menu 1 -->
+        <div class="service-card">
+          <div class="service-icon"><img src="menu1.png" style="width: 100%; border-radius: 8px;" alt="Nasi Kuning"></div>
+          <h3>Nasi Kuning</h3>
+          <p>Memiliki cita rasa yang gurih dengan warna kuning cerah, membuat hidangan ini digemari.</p>
+        </div>
+        <!-- Menu 2 -->
+        <div class="service-card">
+          <div class="service-icon"><img src="menu2.png" style="width: 100%; border-radius: 8px;" alt="Gado-gado"></div>
+          <h3>Gado-gado</h3>
+          <p>Salah satu makanan khas Indonesia yang terdiri dari aneka sayuran yang direbus.</p>
+        </div>
+        <!-- Menu 3 -->
+        <div class="service-card">
+          <div class="service-icon"><img src="menu3.png" style="width: 100%; border-radius: 8px;" alt="Nasi Uduk"></div>
+          <h3>Nasi Uduk</h3>
+          <p>Nasi Uduk adalah salah satu hidangan khas Betawi (Jakarta) yang terbuat dari beras yang direbus.</p>
+        </div>
+        <!-- Menu 4 -->
+        <div class="service-card">
+          <div class="service-icon"><img src="menu4.png" style="width: 100%; border-radius: 8px;" alt="Nasi Daun Jeruk"></div>
+          <h3>Nasi Daun Jeruk</h3>
+          <p>Nasi Daun Jeruk adalah salah satu kreasi olahan nasi khas Indonesia yang terkenal dengan keharuman aromanya yang segar.</p>
+        </div>
+        <!-- Menu 5 -->
+        <div class="service-card">
+          <div class="service-icon"><img src="menu5.png" style="width: 100%; border-radius: 8px;" alt="Nasi Pecel"></div>
+          <h3>Nasi Pecel</h3>
+          <p>Nasi Pecel berupa nasi putih yang disajikan dengan aneka sayuran rebus lalu disiram bumbu sambal kacang.</p>
+        </div>
+        <!-- Menu 6 -->
+        <div class="service-card">
+          <div class="service-icon"><img src="menu6.png" style="width: 100%; border-radius: 8px;" alt="Rujak Cingur"></div>
+          <h3>Rujak Cingur</h3>
+          <p>Rujak Cingur merupakan salah satu makanan tradisional khas Jawa Timur yang terkenal dengan perpaduan rasa gurih, pedas, manis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TUGAS 1: SECTION BOOK A TABLE (DILETAKKAN SETELAH PILIHAN MENU) -->
+  <section class="book-table" id="book-table">
+    <div class="container-book">
+      <div class="form-container">
+        <h2>Book A Table</h2>
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="tel" placeholder="Phone Number" required>
+          <input type="email" placeholder="Your Email" required>
+          <select required>
+            <option value="" disabled selected>How many persons?</option>
+            <option value="1">1 Person</option>
+            <option value="2">2 Persons</option>
+            <option value="3">3 Persons</option>
+            <option value="4">4+ Persons</option>
+          </select>
+          <input type="date" required>
+          <button type="submit" class="btn-book">BOOK NOW</button>
+        </form>
+      </div>
+      <div class="map-container">
+        <!-- Google Maps lokasi SMKN 1 Mojokerto -->
+        <iframe src="https://google.com" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- TUGAS 2: SECTION KOMENTAR REKANAN (DILETAKKAN SEBELUM FOOTER DAN SETELAH BOOK A TABLE) -->
+  <section class="customers" id="customers">
+    <div class="container-customers">
+      <h2 class="customer-title">What Says Our Customers</h2>
+      <div class="testimonial-grid">
+        <!-- Testimoni 1 -->
+        <div class="testimonial-card">
+          <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <h4 class="customer-name">Moana Michell</h4>
+          <p class="customer-subtitle">magna aliqua</p>
+        </div>
+        <!-- Testimoni 2 -->
+        <div class="testimonial-card">
+          <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <h4 class="customer-name">Mike Hamell</h4>
+          <p class="customer-subtitle">magna aliqua</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PART 3. MEMBUAT SECTION FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Contact Us -->
+      <div class="footer-column contact">
+        <h2>Contact Us</h2>
+        <div class="contact-item">
+          <span>Location in skaneda</span>
+        </div>
+        <div class="contact-item">
+          <span>WA 08111122234</span>
+        </div>
+        <div class="contact-item">
+          <span>JagatSaji@gmail.com</span>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div class="footer-column about">
+        <h2>JagatSaji</h2>
+        <div class="deskripsi-footer">
+          <span>Kuliner SMK Negeri 2 Mojokerto</span>
+        </div>
+        <div class="social-icons">
+          <a href="#"><img src="fecebook.png" style="width: 20px;"></a>
+          <a href="#"><img src="instagram.png" style="width: 20px;"></a>
+          <a href="#"><img src="twitter.png" style="width: 20px;"></a>
+        </div>
+      </div>
+
+      <!-- Opening Hours -->
+      <div class="footer-column hours">
+        <h2>Opening Hours</h2>
+        <div class="deskripsi-footer">
+          <p>Everyday 10.00 Am - 18.00 Pm</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reserved">
+      <span>© 2026 All Rights Reserved by rpl_skaneda</span>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
+  

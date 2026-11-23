@@ -1,0 +1,400 @@
+/* ========================================================
+   GAYA UMUM / RESETTING SYSTEM 
+   ======================================================== */
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Arial';
+    background-color: #ffffff;
+}
+
+/* ========================================================
+   PART 1. AWAL NAVBAR 
+   ======================================================== */
+nav {
+    background-color: #0c0c0c;
+    padding: 20px 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    color: #f8f6f5;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li a {
+    color: #ffffff;
+    font-size: 16px;
+    margin-right: 25px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #ffbe33;
+}
+
+.menu ul li img {
+    vertical-align: middle;
+}
+
+.menu ul li a.order {
+    background-color: #ffbe33;
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-right: 0;
+}
+
+.menu ul li a.order:hover {
+    background-color: #e2a628;
+}
+
+/* ========================================================
+   PART 2. SECTION BANNER 
+   ======================================================== */
+.banner {
+    padding: 60px 0;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.kolom {
+    text-align: left;
+    color: #121212;
+    flex: 1;
+    padding-right: 40px;
+}
+
+.kolom .deskripsi {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #b88708;
+    margin-bottom: 10px;
+}
+
+.kolom p {
+    font-family: Arial, sans-serif;
+    color: #444444;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.kolom h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #b88708;
+    line-height: 1.2;
+}
+
+.gambar {
+    width: 450px;
+    height: auto;
+    border-radius: 24px;
+}
+
+a.reservasi {
+    display: inline-block;
+    background: #ffbe33;
+    border-radius: 25px;
+    margin-top: 25px;
+    padding: 12px 30px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ========================================================
+   PART 3. SERVICES SECTION (PILIHAN MENU)
+   ======================================================== */
+.services {
+    padding: 80px 0;
+    background: #ffffff;
+    display: block;
+}
+
+.container-services {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    color: #222222;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service-card {
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+    background-color: #f7f5f2;
+}
+
+.service-icon {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #222222;
+}
+
+.service-card p {
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* ========================================================
+   TUGAS 1. SECTION BOOK A TABLE
+   ======================================================== */
+.book-table {
+    padding: 80px 0;
+    background: #ffffff;
+    display: block;
+}
+
+.container-book {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+}
+
+.form-container {
+    flex: 1;
+}
+
+.form-container h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    color: #222222;
+    margin-bottom: 25px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-container input, 
+.form-container select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-book {
+    width: 150px;
+    background: #ffbe33;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.map-container {
+    flex: 1;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ========================================================
+   TUGAS 2. SECTION KOMENTAR REKANAN
+   ======================================================== */
+.customers {
+    padding: 80px 0;
+    background: #ffffff;
+    display: block;
+}
+
+.container-customers {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.customer-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    color: #222222;
+    margin-bottom: 40px;
+}
+
+.testimonial-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.testimonial-card {
+    background: #1c2331;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: left;
+}
+
+.testimonial-text {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.customer-name {
+    font-size: 16px;
+    margin: 5px 0 2px 0;
+    font-weight: bold;
+}
+
+.customer-subtitle {
+    color: #aaaaaa;
+    font-size: 12px;
+}
+
+/* ========================================================
+   PART 3. SECTION FOOTER
+   ======================================================== */
+footer {
+    width: 100%;
+    background: #161616;
+    color: #ffffff;
+    padding: 60px 0 20px 0;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.footer-column {
+    text-align: center;
+}
+
+.footer-column h2 {
+    font-family: 'Times New Roman';
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact {
+    text-align: left;
+}
+
+.contact-item {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.deskripsi-footer {
+    font-size: 14px;
+    color: #eeeeee;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.hours p {
+    font-size: 14px;
+    color: #eeeeee;
+}
+
+.reserved {
+    font-size: 13px;
+    color: #aaaaaa;
+    margin-top: 40px;
+    text-align: center;
+    border-top: 1px solid #333333;
+    padding-top: 20px;
+}
